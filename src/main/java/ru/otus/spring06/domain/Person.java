@@ -13,12 +13,8 @@ public class Person {
     private int id;
     private String name;
 
-    @OneToOne
-    private Email email;
-
-    public Person(String name, Email email) {
+    public Person(String name) {
         this.name = name;
-        this.email = email;
     }
 
     public int getId() {
@@ -35,13 +31,5 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Email getEmail() {
-        return email;
-    }
-
-    public void setEmail(Email email) {
-        this.email = email;
     }
 }
